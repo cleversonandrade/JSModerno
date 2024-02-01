@@ -1,4 +1,13 @@
-let n1 = 1;
-let n2 = 2;
+let nome = 'Cleverson';
 
-console.log(!(n1 != n2));
+{
+    let siglaCurso = 'JS';
+    console.log(siglaCurso);
+}
+
+const curso = () => {
+    let curso = 'JavaScript'
+    console.log(curso)
+}
+
+curso();

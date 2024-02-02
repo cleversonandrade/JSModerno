@@ -1,7 +1,11 @@
-const soma = (v1,v2,v3) => {
-    return v1 + v2 + v3
-}
+const objs1 = document.getElementsByTagName('div');
+const objs2 = [...document.getElementsByTagName('div')];
 
-let valores = [2,3,5];
+objs2.forEach(element => {
+    element.innerHTML = 'Cleverson'
+});
 
-console.log(soma(...valores));
+console.log(objs1);
+console.log(objs2);
+
+

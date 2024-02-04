@@ -7,5 +7,3 @@ objs2.forEach(element => {
 
 console.log(objs1);
 console.log(objs2);
-
-

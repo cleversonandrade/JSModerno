@@ -1,11 +1,11 @@
-console.log('Ínicio do programa')
+ console.log('Ínicio do programa')
 
-for(let i = 0; i <= 100; i++) {
+ for(let i = 0; i <= 100; i++) {     
     if(i%2 == 0) {
-        console.log(i + ' Número par')
+         console.log(i + ' Número par')
     } else {
         console.log(i + ' Número ímpar')
     }
-}
+ }
 
-console.log('Fim do programa')
+ console.log('Fim do programa')

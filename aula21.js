@@ -1,10 +1,13 @@
 function estudos() {
     let n1 = 5;
-    let n2 = 5;
+    let n2 = 2;
     let res = n1 * n2;
-    return res
+    if(res%2 == 0) {
+        return 'Par'
+    } else {
+        return 'Ímpar'
+    }
 }
 
-let resultado = estudos();
-
-console.log(resultado);
+let res = estudos();
+console.log(res);

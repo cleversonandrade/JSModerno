@@ -1,7 +1,5 @@
-function soma(p1) {
-    console.log(p1)
+function soma(n1, n2) {
+    console.log(n1 + n2)
 }
 
-soma('Cleverson');
-soma(2024);
-soma(4.0);
+soma(5,10);

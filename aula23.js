@@ -1,5 +1,10 @@
 function soma(...valores) {
-    return valores.length
+    let tam = valores.length;
+    let res = 0;
+    for(let i = 0; i < tam; i++) {
+        res+=valores[i]
+    }
+    return res;
 }
 
-console.log(soma(10, 5, 15, 25))
+console.log(soma(10, 5));

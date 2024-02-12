@@ -1,5 +1,9 @@
-const f = function(v1, v2) {
-    return v1 + v2
+const f = function(...valores) {
+    let res = 0;
+    for(let v of valores) {
+        res += v;
+    }
+    return res;
 }
 
-console.log(f(10, 2))
+console.log(f(10, 10));

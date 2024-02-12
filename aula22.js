@@ -21,4 +21,4 @@ function somar(n1 = valorPadrao, n2 = valorPadrao) {
 }
 
 let resultado = somar(5,7);
-//console.log(resultado);
+// console.log(resultado);

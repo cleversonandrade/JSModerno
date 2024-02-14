@@ -1,15 +1,10 @@
-function* nomes() {
-    yield 'Cleverson'
-    yield 'Jéssica'
-    yield 'Kauã'
-    yield 'Pietro'
-    yield 'Billy'
+function* perguntas() {
+    const nome = yield 'Qual seu nome ? '
+    const idade = yield 'Qual sua idade ?'
+    return 'Seu nome é ' + nome + ', sua idade é ' + idade + ' anos.'
 }
 
-const itc = nomes();
-console.log(itc.next().value);
-console.log(itc.next().value);
-console.log(itc.next().value);
-console.log(itc.next().value);
-console.log(itc.next().value);
-
+const itp = perguntas();
+console.log(itp.next().value);
+console.log(itp.next('Cleverson').value);
+console.log(itp.next('40').value);

@@ -1,10 +1,12 @@
-function* perguntas() {
-    const nome = yield 'Qual seu nome ? '
-    const idade = yield 'Qual sua idade ?'
-    return 'Seu nome é ' + nome + ', sua idade é ' + idade + ' anos.'
+function* contador() {
+    let i = 0;
+    while(true) {
+        yield i++
+    }
 }
 
-const itp = perguntas();
-console.log(itp.next().value);
-console.log(itp.next('Cleverson').value);
-console.log(itp.next('40').value);
+const itc = contador();
+for(let i = 0; i <= 15; i++) {
+    console.log(itc.next().value);
+}
+

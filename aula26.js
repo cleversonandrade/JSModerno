@@ -11,5 +11,5 @@ const soma = (...valores) => {
 }
 
 console.log(soma(10, 5, 15));
-valor = [10, 5, 15];
+valor = [10, 5, 15]
 console.log(soma(...valor));

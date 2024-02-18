@@ -1,14 +1,14 @@
-function aluno(nome, nota) {
-    this.nome = nome;
-    this.nota = nota;
+function carro(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
 
-    this.dadosDoAluno = function() {
-        setTimeout(() => {
-            console.log(this.nome);
-            console.log(this.nota);
-        }, 2000)
+    this.dadosDoVeiculo = function() {
+       setTimeout(() => {
+        console.log(this.marca);
+        console.log(this.modelo);
+       }, 2000)
     }
 }
 
-const alunoNovo = new aluno('Cleverson', 25);
-alunoNovo.dadosDoAluno();
+const carro2 = new carro('Honda', 'Civic');
+carro2.dadosDoVeiculo();

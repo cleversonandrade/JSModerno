@@ -1,12 +1,14 @@
 const elemento1 = document.getElementById('c1');
 const elemento2 = document.getElementById('c2');
+const elemento3 = document.getElementById('c3');
+const elemento4 = document.getElementById('c4');
+const elemento5 = document.getElementById('c5');
+const elemento6 = document.getElementById('c6');
 
-console.log(elemento1);
-console.log(elemento1.id);
-console.log(elemento1.innerHTML);
-elemento1.innerHTML = 'Cleverson';
+const arrayElementos = [elemento1, elemento2, elemento3, elemento4, elemento5, elemento6];
 
-console.log(elemento2);
-console.log(elemento2.id);
-console.log(elemento2.innerHTML);
-elemento2.innerHTML = 'Texto manipulado';
+for(e of arrayElementos) {
+    e.innerHTML = 'Cleverson';
+}
+
+console.log(arrayElementos);

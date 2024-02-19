@@ -7,7 +7,8 @@ const el6 = document.getElementById('c6');
 
 const arrayElementos = [el1, el2, el3, el4, el5, el6];
 
-const colecaoHTML = [...document.getElementsByTagName('div')];
+let colecaoHTML = document.getElementsByTagName('div');
+colecaoHTML = [...colecaoHTML];
 
 console.log(colecaoHTML);
 

@@ -1,6 +1,8 @@
-const c1 = document.querySelector('#c1');
+const cursos = [...document.querySelectorAll('.curso')];
 
-c1.addEventListener('click', (e) => {
-    const elemento = e.target
-    elemento.classList.add('destaque');
+cursos.map((el) => {
+    el.addEventListener('click', (e) => {
+        const el = e.target;
+        el.classList.add('destaque');
+    });
 });

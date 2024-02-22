@@ -1,9 +1,6 @@
 const c1 = document.querySelector('#c1');
 
-const msg = () => {
-    alert('clicou');
-};
-
-c1.addEventListener('click', () => {
-    msg();
+c1.addEventListener('click', (e) => {
+    const elemento = e.target
+    elemento.classList.add('destaque');
 });

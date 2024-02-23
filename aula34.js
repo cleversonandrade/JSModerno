@@ -1,8 +1,9 @@
 const cursos = [...document.querySelectorAll('.curso')];
 
-cursos.map((el) => {
-    el.addEventListener('click', (e) => {
-        const el = e.target;
-        el.classList.add('destaque');
+cursos.map((elemento) => {
+    elemento.addEventListener('click', (e) => {
+        const elemento = e.target;
+        elemento.classList.add('destaque');
+        console.log(elemento + 'Foi clicado');
     });
 });

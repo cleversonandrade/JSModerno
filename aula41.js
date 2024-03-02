@@ -25,8 +25,6 @@ cursos.map((elemento, chave) => {
         caixa1.removeChild(e.target.parentNode);
     });
 
-
-    novoElemento.appendChild(btnLixeira);
     novoElemento.appendChild(btnLixeira);
     
 });

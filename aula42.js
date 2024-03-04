@@ -1,16 +1,16 @@
-const idades = [15, 21, 30, 17, 18, 44, 12, 50];
-const maior = idades.filter((val, ind, arr) => {
+const idades = [10, 15, 32, 47, 18, 55, 6, 92];
+const maiorIdade = idades.filter((val) => {
     if(val >= 18) {
-        return val
+        return val;
     };
 });
 
-const menorIdade = idades.filter((v, i, a) => {
-    if(v <= 18) {
-        return v;
-    }
-})
+const menorIdade = idades.filter((val) => {
+    if(val < 18) {
+        return val;
+    };
+});
 
-console.log(idades)
-console.log(maior)
-console.log(menorIdade)
+console.log(idades);
+console.log(maiorIdade);
+console.log(menorIdade);
